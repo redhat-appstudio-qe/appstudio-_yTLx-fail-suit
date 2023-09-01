@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-hzof
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-deploy-tenant/appstudio/dc-metro-map-hzof@sha256:14a1a993165dcacb6bb0ae09bbe475a2e9cc6b6751aba66e5c37b0e7057d8e06
+        name: my-nodejs
+        resources: {}
+status: {}
